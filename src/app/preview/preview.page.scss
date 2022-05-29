@@ -1,0 +1,73 @@
+ion-content {
+  --background: transparent !important;
+}
+.image-center {
+  height: 100%;      /* Equals maximum image height */
+  width: 100%;
+  border: 1px solid red;
+  white-space: nowrap; /* This is required unless you put the helper span closely near the img */
+
+  text-align: center;
+  margin: 1em 0;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+img {
+  background: #3A6F9A;
+  vertical-align: middle;
+  max-height: 100%;
+  max-width:100%
+}
+
+#launch {
+  position: absolute;
+  bottom: 30px;
+  left: calc(50% - 25px);
+  width: 50px;
+  height: 50px;
+  z-index: 99999;
+}
+
+#capture {
+  position: absolute;
+  bottom: 30px;
+  left: calc(50% - 25px);
+  width: 50px;
+  height: 50px;
+  z-index: 99999;
+}
+
+#flip {
+  position: absolute;
+  bottom: 30px;
+  left: calc(50% + 125px);
+  width: 50px;
+  height: 50px;
+  z-index: 99999;
+}
+
+#close {
+  position: absolute;
+  bottom: 30px;
+  left: calc(50% - 175px);
+  width: 50px;
+  height: 50px;
+  z-index: 99999;
+}
+
+#capture::part(native) {
+  border-radius: 30px;
+}
+
+#close::part(native) {
+  border-radius: 30px;
+}
+
+#flip::part(native) {
+  border-radius: 30px;
+}
